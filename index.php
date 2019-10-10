@@ -43,7 +43,7 @@
       <div class="card-image card-video">
       <img src="img/food.jpg">
           <span class="card-title">Card Title</span>
-          <iframe id="video2" width="400" height ="400" src="//www.youtube.com/embed/FKWwdQu6_ok?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
+          <iframe id="video3" width="400" height ="400" src="//www.youtube.com/embed/FKWwdQu6_ok?enablejsapi=1&html5=1" frameborder="0" allowfullscreen></iframe>
 
         </div>
         <div class="card-content">
