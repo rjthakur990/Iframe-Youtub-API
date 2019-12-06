@@ -1,0 +1,24 @@
+sections:
+  main:
+    display: Main
+    fields:
+      description:
+        type: text
+        display: Description
+        instructions: 'The subheading of your page''s main title'
+        localizable: true
+      header-img:
+        type: assets
+        container: main
+        folder: img
+        display: 'Header image for your page'
+        mode: grid
+        restrict: false
+        max_files: 1
+      button_cta:
+        type: text
+        display: 'Call To Action'
+      button_url:
+        type: text
+        display: 'CTA Link'
+taxonomies: false

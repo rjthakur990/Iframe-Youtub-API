@@ -1,0 +1,8 @@
+app_key: F11KZhxbRt8PxLsZ34SP4ZeCynVFzuJS
+yaml_parser: symfony
+locales:
+  en:
+    full: en_US
+    name: English
+    url: 'http://laravel.site/'
+timezone: America/New_York

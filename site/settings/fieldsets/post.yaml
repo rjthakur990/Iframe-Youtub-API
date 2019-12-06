@@ -1,0 +1,131 @@
+taxonomies: true
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        display: Title
+        type: text
+        localizable: true
+        width: 50
+      slug:
+        display: Slug
+        type: text
+        width: 50
+      banner:
+        buttons:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - bold
+          - italic
+          - underline
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - subscript
+          - anchor
+          - assets
+          - code
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: true
+        semantic_elements: false
+        container: main
+        folder: img
+        restrict_assets: false
+        sets:
+          set_1:
+            display: 'Set 1'
+            fields:
+              banner_image:
+                container: main
+                folder: img
+                restrict: false
+                type: assets
+                display: 'Banner Image'
+        type: bard
+        display: Banner
+      author_name:
+        type: text
+        width: 50
+        display: 'Author Name'
+      author_image:
+        container: main
+        folder: img
+        restrict: false
+        max_files: 1
+        type: assets
+        width: 50
+        display: 'Author Image'
+      description:
+        type: text
+        display: Description
+      content:
+        cheatsheet: true
+        restrict_assets: false
+        type: markdown
+        display: Content
+      article_content:
+        buttons:
+          - h2
+          - h3
+          - bold
+          - italic
+          - underline
+          - unorderedlist
+          - orderedlist
+          - removeformat
+          - quote
+          - anchor
+          - assets
+          - code
+        style: sans
+        spellcheck: true
+        allow_source: true
+        allow_internal_links: true
+        link_noopener: false
+        link_noreferrer: false
+        target_blank: false
+        semantic_elements: false
+        restrict_assets: false
+        sets:
+          article_image_embed:
+            display: 'Article Image Embed'
+            fields:
+              image_embed:
+                container: main
+                folder: /
+                restrict: false
+                max_files: 1
+                type: assets
+                display: 'Image Embed'
+          quote:
+            display: Quote
+            fields:
+              quote_text:
+                type: text
+                display: 'Quote Text'
+              cite:
+                type: text
+                display: Cite
+          set_3:
+            display: 'Set 3'
+            fields:
+              field_1:
+                cheatsheet: false
+                restrict_assets: false
+                type: markdown
+                display: 'Field 1'
+        type: bard
+        display: 'Article Content'
+title: 'Blog Post'

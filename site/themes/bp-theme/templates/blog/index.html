@@ -1,0 +1,55 @@
+<div class="mx-auto">
+    <div class="container mx-auto flex p-12 bg-blue-100 rounded rounded-t-none">
+        <div class="flex-1">
+          <h1 class="text-3xl font-semibold">{{ title }}</h1>
+          <hr class=" w-8 border-b-4 border-blue-200">
+          <p class="mt-6">{{ description }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="max-w-6xl mx-auto">
+
+</div>
+
+<article class="container lg:max-w-2xl px-8 py-8">
+    {{ collection:blog paginate="true" as="posts" limit="4" }}
+        {{ posts scope="tag" }}
+        <div class="my-4">
+            <a  href="{{ url }}" class="block lg:flex lg:w-full rounded hover:bg-gray-200">
+                <div class="lg:flex lg:py-0 border-gray-200">
+                    {{ banner }}
+                    {{ assets:banner_image }}
+                    <img class="rounded-lg md:w-64 md:h-9" src="{{ url }}" alt="{{ alt }}" /> 
+                    {{ /assets:banner_image }}
+                    {{ /banner }}
+                  <div class="ml-6">
+                        <div class="">
+                            <div class="uppercase tracking-wide text-sm text-blue-600 font-bold">Marketing</div>
+                            <h2>
+                                <div class="block mt-1 text-lg leading-tight text-xl font-bold text-black mb-2 mt-10">
+                                    {{ title }}
+                                </div>
+                            </h2>
+                            <p class="mt-2 text-gray-600 text-lg text-grey-darkest leading-normal  mt-6" >{{ summary }}</p>
+                        </div>
+                        <div class="flex block py-4 items-center text-sm text-gray-500">
+                            <img class="rounded-full h-10 w-10" src="{{ author_image }}" width="48" height="48">
+                            <div class="pl-2">
+                                <div class="">
+                                    {{ author_name }} &bull;
+                                </div>
+                            </div>
+                            <div class="">
+                                {{ date format="F j, Y" }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {{ /posts }}
+
+        {{ partial:pagination }}
+    {{ /collection:blog }}
+</article>
