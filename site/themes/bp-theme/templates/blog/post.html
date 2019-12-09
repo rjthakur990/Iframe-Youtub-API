@@ -17,7 +17,7 @@
 </div>
 
 <div class="max-w-6xl mx-auto">
-    <div class="pt-6 pb-6">
+    <div class="pt-6 pb-6 markdown">
       <div class="container mt-6 mb-6 mx-auto lg:px-12">
         {{ banner }}
             {{ assets:banner_image }}
@@ -26,7 +26,7 @@
         {{ /banner }}
        
         {{ content }}
-
+    <div class ="markdown">
         <div class="px-20 text-lg text-grey-darkest leading-normal  mt-6">
             {{ article_content }}
                 {{ if type == "text" }}
@@ -50,6 +50,7 @@
 
             {{ /article_content }}
         </div>
+    </div>
       </div>
     </div>
 </div>
