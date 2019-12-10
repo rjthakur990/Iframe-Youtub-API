@@ -642,7 +642,11 @@ video {
     max-width: 768px;
   }
 }
-
+@media (max-width: 1024px) {
+  #mobile_nav {
+    display:none
+  }
+}
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
