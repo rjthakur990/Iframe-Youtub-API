@@ -62,39 +62,40 @@
  */
  .markdown {
     @apply text-lg text-grey-darkest leading-normal;
-    & >   +  ,  & li + li, & li > p + p {
+ }
+ .markdown  >   +  ,  & li + li, & li > p + p {
       @apply mt-6;
     }
-    & strong {
+    .markdown strong {
       @apply text-black font-bold;
     }
-    & a {
+    .markdown  a {
       @apply text-black font-semibold;
     }
-    & strong a {
+    .markdown  strong a {
       @apply font-bold;
     }
-    & h2 {
+    .markdown  h2 {
       @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
     }
-    & h3 {
+    .markdown  h3 {
       @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
     }
-    & code {
+    .markdown code {
       @apply font-mono text-sm inline bg-grey-lighter px-1;
     }
-    & pre code {
+    .markdown pre code {
       @apply block bg-black p-4 rounded;
     }
-    & blockquote {
+    .markdown blockquote {
       @apply border-l-4 border-grey-light pl-4 italic;
     }
-    & ul, & ol {
+    .markdown  ul, .markdown  ol {
       @apply pl-5;
       @screen sm {
         @apply pl-10;
       }
     }
-  }
+ 
 
  
